@@ -27,5 +27,11 @@ public class PersonTest {
 		System.out.println("\"" + gosho.name + " is " + gosho.age + " years old and weights " + gosho.weight + ".\"");
 		System.out.println("\"" + didi.name + " is " + didi.age + " years old and her PN is " + didi.personalNumber + ".\"");
 
+		// Methods
+		gosho.walk();
+		double liters = 3.8;
+		didi.drinkWater(liters);
+		
+		
 	}
 }
