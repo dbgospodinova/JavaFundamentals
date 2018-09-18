@@ -76,5 +76,8 @@ public class Initialization {
 		System.out.println();
 
 		System.out.println(bool);
+		
+		// TODO
+		// Add example with BigInteger
 	}
 }
