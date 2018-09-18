@@ -6,6 +6,20 @@ public class Person {
 	long personalNumber; 
 	boolean isWoman; 
 	double weight;
+	Person friend;
+	
+	Person () {
+		age = 0;
+		weight = 4;
+	}
+	
+	Person (String name, long personalNumber, boolean isWoman){
+		this ();
+		this.name = name;
+		this.personalNumber = personalNumber;
+		this.isWoman = isWoman;
+		this.friend = new Person();
+	}
 
 	void eat() {
 		System.out.println("Eating...");

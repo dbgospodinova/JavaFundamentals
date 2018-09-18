@@ -1,5 +1,7 @@
 package object.oriented.programming;
 
+import javax.jws.soap.SOAPBinding;
+
 public class CarDemo {
 	public static void main(String[] args) {
 		Car redCar = new Car();
@@ -33,9 +35,17 @@ public class CarDemo {
 			redCar.changeGearUp(); 
 		} 
 		System.out.println("The current gear is " + redCar.currentGear);
-		
+
 		redCar.changeColor("Black");
 		System.out.println("The red car color is changed to: " + redCar.color);
+
+		Car golf = new Car("Golf",true,"blue");
+
+		Car test = new Car("village",true,"dirtyyellow",1099.99,10);
+		
+		System.out.println(redCar);
+		System.out.println(golf);
+		System.out.println(test);
 
 	}
 }

@@ -31,7 +31,16 @@ public class PersonTest {
 		gosho.walk();
 		double liters = 3.8;
 		didi.drinkWater(liters);
-		
-		
+
+		// Constructors
+		Person mikelandjelo = new Person("Mikelandjelo",321,true);
+		Person leonardo = new Person("Leonardo",123,true);
+		Person donatello = new Person();
+		donatello.name = "Donatello";
+		leonardo.friend = mikelandjelo;
+
+		System.out.println(mikelandjelo);
+		System.out.println(leonardo);
+		System.out.println(donatello);
 	}
 }
