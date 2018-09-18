@@ -6,7 +6,6 @@ public class Person {
 	long personalNumber; 
 	boolean isWoman; 
 	double weight;
-	// Person friend = new Person();
 
 	void eat() {
 		System.out.println("Eating...");
