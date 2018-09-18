@@ -1,7 +1,5 @@
 package object.oriented.programming;
 
-import javax.jws.soap.SOAPBinding;
-
 public class CarDemo {
 	public static void main(String[] args) {
 		Car redCar = new Car();
