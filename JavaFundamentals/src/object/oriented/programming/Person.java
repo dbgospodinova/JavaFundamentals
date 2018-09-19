@@ -7,6 +7,8 @@ public class Person {
 	boolean isWoman; 
 	double weight;
 	Person friend;
+	double money;
+	Car car;
 	
 	Person () {
 		age = 0;
@@ -42,7 +44,13 @@ public class Person {
 		} else { 
 			System.out.println(name + " is drinking " + liters + " water.");
 		}
-
-
+	}
+	
+	void buyCar(Car car) {
+		if (this.money > car.price) {
+			System.out.println("You buy a car.");
+		} else {
+			System.out.println("You don't have enought money :(");
+		}
 	}
 }

@@ -1,6 +1,6 @@
 package object.oriented.programming;
 
-public class PersonTest {
+public class PersonDemo {
 	public static void main(String[] args) {
 		Person pesho = new Person();
 		pesho.name = "Pesho";

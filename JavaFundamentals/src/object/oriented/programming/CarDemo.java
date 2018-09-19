@@ -34,7 +34,7 @@ public class CarDemo {
 		} 
 		System.out.println("The current gear is " + redCar.currentGear);
 
-		redCar.changeColor("Black");
+		redCar.changeColor("black");
 		System.out.println("The red car color is changed to: " + redCar.color);
 
 		Car golf = new Car("Golf",true,"blue");
@@ -44,6 +44,12 @@ public class CarDemo {
 		System.out.println(redCar);
 		System.out.println(golf);
 		System.out.println(test);
+		
+		System.out.println(redCar.isMoreExpensive(blueCar));
+		redCar.isSportCar = true;
+		System.out.println(redCar.isSportCar);
+		System.out.println(redCar.calculateCarpriceForScrap(5));
+		
 
 	}
 }

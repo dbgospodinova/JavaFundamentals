@@ -11,9 +11,9 @@ public class Car {
 	String model;
 
 	Car (){
-		
+
 	}
-	
+
 	Car(String model, boolean isSportCar, String color) {
 		this.model = model;
 		this.isSportCar = isSportCar;
@@ -23,7 +23,7 @@ public class Car {
 	Car (String model, boolean isSportCar, String color, double price, int maxSpeed){
 		this (model, isSportCar, color);
 		this.price = price;
-		
+
 		if (!isSportCar && maxSpeed > 200) {
 			this.maxSpeed = 200;
 		} else {
@@ -55,4 +55,23 @@ public class Car {
 		color = newColor;
 	}
 
+	boolean isMoreExpensive(Car otherCar){
+		if (this.price > otherCar.price) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	double calculateCarpriceForScrap (double metalPrice){
+		double coef = 0.2;
+		if(this.isSportCar){
+			coef+= 0.05;
+		}
+
+		if(this.color.equalsIgnoreCase("black") || this.color.equalsIgnoreCase("white")){
+			coef+= 0.05;
+		}
+		return coef * metalPrice;
+	}
 }
